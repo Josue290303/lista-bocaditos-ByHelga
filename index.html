@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de Bocaditos</title>
+  <link rel="icon" href="https://i.pinimg.com/736x/d5/12/0d/d5120d05340771cdd16deaf372735866.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .overlay-box {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+      max-width: 700px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <header class="hero-bg h-screen flex flex-col justify-center items-center text-white text-center px-4">
+    <div class="overlay-box">
+      <h1 class="text-5xl font-bold drop-shadow-lg">Bocaditos & Buffet</h1>
+      <p class="text-xl mt-4 drop-shadow">Sabores únicos para tus mejores momentos</p>
+      <p class="text-xl mt-4 drop-shadow">By: Helga López</p>
+      >
+    </div>
+  </header>
+
+  <!-- Tres cuadros abajo de la vista principal -->
+  <section class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+      <h3 class="text-2xl font-semibold mb-3 text-gray-800">Buffets</h3>
+      <p class="text-gray-600">
+        Buffet para cumpleaños, matrimonios, eventos corporativos, bautizos y más, preparados con ingredientes frescos y amor.
+      </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+      <h3 class="text-2xl font-semibold mb-3 text-gray-800">Bocaditos Dulces</h3>
+      <p class="text-gray-600">
+        Mini alfajores, tartaletas, brownies y mucho más, perfectos para endulzar cualquier ocasión especial.
+      </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+      <h3 class="text-2xl font-semibold mb-3 text-gray-800">Bocaditos Salados</h3>
+      <p class="text-gray-600">
+        Petipanes, humitas, mini pizzas y más bocaditos salados deliciosos para complementar tus eventos.
+      </p>
+    </div>
+  </section>
+
+  <section id="dulces" class="py-10 px-4 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">🍬 Bocaditos Dulces</h2>
+    <div class="overflow-x-auto">
+      <table class="table-auto text-sm md:text-base">
+        <thead class="bg-gray-100">
+          <tr>
+            <th>Bocadito</th>
+            <th>25 unidades</th>
+            <th>50 unidades</th>
+            <th>100 unidades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mini Alfajores de Maicena</td>
+            <td>S/27.00</td>
+            <td>S/45.00</td>
+            <td>S/90.00</td>
+          </tr>
+          <tr>
+            <td>Tartaletas de Fresa</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Bombones de Chocolate</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Galletas de Mermelada</td>
+            <td>S/27.00</td>
+            <td>S/45.00</td>
+            <td>S/90.00</td>
+          </tr>
+          <tr>
+            <td>Galletas con Chispas de Chocolate</td>
+            <td>S/27.00</td>
+            <td>S/45.00</td>
+            <td>S/90.00</td>
+          </tr>
+          <tr>
+            <td>Mini Pie de Manzana</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Mini Brownies</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Mini Pie de Limón</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Mini Piononos con Manjar</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="salados" class="py-10 px-4 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">🥪 Bocaditos Salados</h2>
+    <div class="overflow-x-auto">
+      <table class="table-auto text-sm md:text-base">
+        <thead class="bg-gray-100">
+          <tr>
+            <th>Bocadito</th>
+            <th>25 unidades</th>
+            <th>50 unidades</th>
+            <th>100 unidades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Petipanes con Pollo</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Juanecitos</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Humitas</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Mini Hamburguesitas</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Mini Pizzas</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Tequeños de Queso o Hot Dog (incluye crema de palta)</td>
+            <td>S/27.00</td>
+            <td>S/45.00</td>
+            <td>S/90.00</td>
+          </tr>
+          <tr>
+            <td>Brochetas de Pollo (incluye crema tartara)</td>
+            <td>S/35.00</td>
+            <td>S/70.00</td>
+            <td>S/140.00</td>
+          </tr>
+          <tr>
+            <td>Alitas Brosters (incluye crema de pimiento)</td>
+            <td>S/40.00</td>
+            <td>S/80.00</td>
+            <td>S/160.00</td>
+          </tr>
+          <tr>
+            <td>Triples de Jamón y Queso</td>
+            <td>S/35.00</td>
+            <td>S/70.00</td>
+            <td>S/140.00</td>
+          </tr>
+          <tr>
+            <td>Empanaditas de Pollo</td>
+            <td>S/30.00</td>
+            <td>S/60.00</td>
+            <td>S/120.00</td>
+          </tr>
+          <tr>
+            <td>Empanaditas de Carne</td>
+            <td>S/35.00</td>
+            <td>S/70.00</td>
+            <td>S/140.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="extras" class="py-8 px-4 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-6">🥤 Extras</h2>
+    <ul class="list-disc list-inside space-y-2 text-center">
+      <li>Balde de refresco: S/80.00</li>
+      <li>Refrescos en botellitas: S/2.00 c/u</li>
+      <li>Envasado en taper personalizados: S/7.00 cada 50 tapers</li>
+      <li>En fuentes transparentes: S/3.50 c/u</li>
+    </ul>
+  </section>
+
+  <footer id="contacto" class="bg-gray-800 text-white py-10 px-4 text-center">
+    <h2 class="text-xl font-semibold mb-2">¿Tienes un evento?</h2>
+    <p class="mb-4">Contáctanos ahora mismo y haz tu pedido con tiempo.</p>
+    <a
+      href="https://wa.me/51982466312?text=%C2%A1Hola Sra Helguita!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido"
+      target="_blank"
+      class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition"
+      >Enviar mensaje por WhatsApp</a
+    >
+  </footer>
+</body>
+</html>
